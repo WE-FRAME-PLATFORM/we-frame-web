@@ -1,0 +1,84 @@
+/* ========================================
+   WEFRAME DESIGN SYSTEM - DESIGN TOKENS
+   Cyberpunk Luxury Dark Theme
+   ======================================== */
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: 255 31 61;
+    --color-primary-hover: 255 51 81;
+    --color-primary-glow: 255 31 61;
+    
+    /* Background Layers */
+    --color-bg-void: 5 5 15;
+    --color-bg-deep: 8 10 25;
+    --color-bg-base: 12 14 35;
+    --color-bg-elevated: 18 22 48;
+    --color-bg-surface: 25 30 60;
+    --color-bg-overlay: 35 40 75;
+    
+    /* Text Colors */
+    --color-text-primary: 255 255 255;
+    --color-text-secondary: 180 185 210;
+    --color-text-muted: 120 125 150;
+    --color-text-disabled: 80 85 100;
+    
+    /* Accent Colors */
+    --color-accent-cyan: 0 212 255;
+    --color-accent-purple: 139 92 246;
+    --color-accent-gold: 251 191 36;
+    --color-accent-emerald: 16 185 129;
+    
+    /* Border Colors */
+    --color-border-subtle: 255 255 255 / 0.06;
+    --color-border-default: 255 255 255 / 0.1;
+    --color-border-strong: 255 255 255 / 0.15;
+    --color-border-glow: var(--color-primary);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 12px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 8px 32px rgb(0 0 0 / 0.5);
+    --shadow-xl: 0 16px 48px rgb(0 0 0 / 0.6);
+    --shadow-glow: 0 0 40px rgb(var(--color-primary) / 0.3);
+    --shadow-glow-lg: 0 0 80px rgb(var(--color-primary) / 0.4);
+    
+    /* Spacing Scale */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+    
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slower: 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Z-Index Scale */
+    --z-base: 0;
+    --z-elevated: 10;
+    --z-sticky: 50;
+    --z-overlay: 100;
+    --z-modal: 200;
+    --z-toast: 300;
+    --z-max: 9999;
+  }
+}
