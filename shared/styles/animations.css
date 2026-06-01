@@ -1,0 +1,158 @@
+/* ========================================
+   WEFRAME - GLOBAL ANIMATIONS
+   Premium Motion System
+   ======================================== */
+
+@layer components {
+  /* Fade Animations */
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fade-up {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  @keyframes fade-down {
+    from { 
+      opacity: 0; 
+      transform: translateY(-20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  @keyframes fade-scale {
+    from { 
+      opacity: 0; 
+      transform: scale(0.95); 
+    }
+    to { 
+      opacity: 1; 
+      transform: scale(1); 
+    }
+  }
+  
+  /* Glow Animations */
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px rgb(var(--color-primary) / 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 40px rgb(var(--color-primary) / 0.5);
+    }
+  }
+  
+  @keyframes border-glow {
+    0%, 100% { 
+      border-color: rgb(var(--color-primary) / 0.3);
+    }
+    50% { 
+      border-color: rgb(var(--color-primary) / 0.6);
+    }
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  /* Floating Animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Scan Line Effect */
+  @keyframes scan-line {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+  }
+  
+  /* Rotate Animation */
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Gradient Flow */
+  @keyframes gradient-flow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  /* Card Hover Lift */
+  @keyframes card-lift {
+    from { transform: translateY(0) scale(1); }
+    to { transform: translateY(-8px) scale(1.02); }
+  }
+  
+  /* Text Reveal */
+  @keyframes text-reveal {
+    from { 
+      clip-path: inset(0 100% 0 0);
+      opacity: 0;
+    }
+    to { 
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+  
+  /* Stagger Animation Classes */
+  .animate-fade-in {
+    animation: fade-in var(--transition-slow) ease-out forwards;
+  }
+  
+  .animate-fade-up {
+    animation: fade-up var(--transition-slow) ease-out forwards;
+  }
+  
+  .animate-fade-scale {
+    animation: fade-scale var(--transition-slow) ease-out forwards;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(255 255 255 / 0.1),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-flow 8s ease infinite;
+  }
+  
+  /* Stagger Delays */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
+  .stagger-7 { animation-delay: 0.7s; }
+  .stagger-8 { animation-delay: 0.8s; }
+}
