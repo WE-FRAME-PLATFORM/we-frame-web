@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-geist-sans: system-ui, -apple-system, sans-serif;
+  --font-geist-mono: 'Courier New', monospace;
+}
+
+html {
+  @apply bg-background;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+* {
+  @apply box-border;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent;
+}
+
+/* Smooth animations */
+@layer utilities {
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .gradient-primary {
+    @apply bg-gradient-to-r from-primary via-accent to-primary;
+  }
+
+  .glass-effect {
+    @apply bg-secondary/50 backdrop-blur-md border border-white/10;
+  }
+}
